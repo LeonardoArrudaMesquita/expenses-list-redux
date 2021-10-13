@@ -1,0 +1,4 @@
+export const ADD_WISHITEM = "ADD_WISHITEM";
+export const UPDATE_WISHITEM = "UPDATE_WISHITEM";
+export const DELETE_WISHITEM = "DELETE_WISHITEM";
+export const GET_WISHITEM = "GET_WISHITEM";
