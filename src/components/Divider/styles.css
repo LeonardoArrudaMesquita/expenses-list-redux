@@ -1,0 +1,14 @@
+.col-divider,
+.row-divider {
+  background-color: var(--color-grey-light);
+}
+
+.col-divider {
+  height: 100%;
+  width: 0.1rem;
+}
+
+.row-divider {
+  height: 0.1rem;
+  width: 100%;
+}

@@ -1,10 +1,10 @@
 import React from "react";
-import "./App.css";
+import "./global.css";
 
-import { WishlistPage } from "../src/pages/WishlistPage";
+import { ExpensesPage } from "../src/pages/ExpensesPage";
 
 function App() {
-  return <WishlistPage />;
+  return <ExpensesPage />;
 }
 
 export default App;
