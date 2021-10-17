@@ -2,25 +2,27 @@ import { WishItem } from "../../components/WishItem";
 
 import { useDispatch, useSelector } from "react-redux";
 
+import { selectWishlist } from "../../redux/selectors/wishlistSelectors";
+
 import "./styles.css";
 import {
   ADD_WISHITEM,
   GET_WISHITEM,
 } from "../../redux/actions/wishlistActions";
-import { store } from "../../redux";
 
 export function WishlistPage() {
   const dispatch = useDispatch();
-  // const wishlist = useSelector((state) => state.wishlist);
+  const wishlist = useSelector(selectWishlist);
 
-  dispatch({ type: ADD_WISHITEM });
-
-  console.log(store.getState());
+  const handleAddItem = () => dispatch({ type: ADD_WISHITEM });
 
   return (
     <div className="wishlists">
       <h1 className="title">My Wish List</h1>
-      <WishItem />
+      {wishlist.map(() => (
+        <WishItem />
+      ))}
+      <button onClick={handleAddItem}>+ Adicionar</button>
     </div>
   );
 }
