@@ -1,0 +1,6 @@
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.7rem;
+  margin-top: 1rem;
+}
