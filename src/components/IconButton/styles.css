@@ -1,0 +1,10 @@
+.icon-button {
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  margin: 0 1rem;
+}
+
+.icon-button:active .icon-button__icon {
+  filter: brightness(50%);
+}
