@@ -1,3 +1,6 @@
 .expense-list-item {
+  width: 100%;
   margin-top: 1.4rem;
+  display: flex;
+  justify-content: "space-between";
 }
