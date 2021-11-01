@@ -1,8 +1,10 @@
 .text-input {
+  font-size: 1.7rem;
   border: 0.1rem solid var(--color-grey-light);
   background-color: var(--color-grey-lighter);
   border-radius: 0.5rem;
   height: 3.5rem;
   padding: 1rem;
   width: 100%;
+  outline: 0;
 }
