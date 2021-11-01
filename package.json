@@ -1,5 +1,5 @@
 {
-  "name": "wishlist-redux",
+  "name": "expense-list-redux",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
