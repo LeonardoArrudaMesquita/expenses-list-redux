@@ -1,0 +1,1 @@
+export { selectExpenses } from "./expensesSelectors";
