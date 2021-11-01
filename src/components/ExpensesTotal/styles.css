@@ -1,0 +1,22 @@
+.expenses-total {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 40rem;
+  min-width: fit-content;
+  padding: 4.9rem;
+}
+
+.expenses-total__title {
+  font-size: 2.5rem;
+}
+
+.no-expense {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+
+.test {
+  width: 38.8rem;
+}
