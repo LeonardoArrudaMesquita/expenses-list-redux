@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
-import { wishlistReducer } from "./wishlistReducers";
+import { expensesReducer } from "./expensesReducers";
 
-const reducers = { wishlist: wishlistReducer };
+const reducers = { expenses: expensesReducer };
 
 export const rootReducer = combineReducers(reducers);
