@@ -1,1 +1,0 @@
-export { wishlistReducer } from "./wishlistReducers";
