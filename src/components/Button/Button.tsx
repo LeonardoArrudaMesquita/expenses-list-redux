@@ -4,9 +4,9 @@ import "./styles.css";
 
 type Props = ButtonHTMLAttributes<HTMLButtonElement>;
 
-export function Button({ title, ...rest }: Props) {
+export function Button({ title, className, ...rest }: Props) {
   return (
-    <button {...rest} className="button">
+    <button {...rest} className={`button ${className}`}>
       {title}
     </button>
   );
