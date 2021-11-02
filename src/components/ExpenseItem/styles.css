@@ -2,5 +2,9 @@
   display: flex;
   justify-content: space-between;
   font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.expense-item:last-child {
   margin-top: 1rem;
 }

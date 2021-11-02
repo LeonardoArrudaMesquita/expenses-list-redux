@@ -10,8 +10,15 @@ import {
 const initialValue: Expense[] = [{ name: "", price: "" }];
 
 const updateWishitem = (state: Expense[], action: AnyAction) => {
-  const index = action.payload.index;
-  state[index] = action.payload.expense;
+  const {
+    index,
+    expense: { name, price },
+  } = action.payload;
+
+  state[index] = {
+    name,
+    price,
+  };
   return state;
 };
 

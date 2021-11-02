@@ -19,7 +19,11 @@ export function ExpensesForm() {
       {expenses.map((item, index) => (
         <ExpensesListItem key={index} index={index} />
       ))}
-      <Button title="+ Add Expense" onClick={handleAddExpense} />
+      <Button
+        title="+ Add Expense"
+        onClick={handleAddExpense}
+        className="mg-bottom"
+      />
     </div>
   );
 }

@@ -1,1 +1,5 @@
-export { selectExpenses } from "./expensesSelectors";
+export {
+  selectExpenses,
+  selectExpensesTotal,
+  selectFilledExpenses,
+} from "./expensesSelectors";
