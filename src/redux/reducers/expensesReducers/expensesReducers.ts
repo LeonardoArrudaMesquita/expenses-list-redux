@@ -9,7 +9,7 @@ import {
 
 const initialValue: Expense[] = [{ name: "", price: "" }];
 
-const updateWishitem = (state: Expense[], action: AnyAction) => {
+const updateExpense = (state: Expense[], action: AnyAction) => {
   const {
     index,
     expense: { name, price },
@@ -22,7 +22,7 @@ const updateWishitem = (state: Expense[], action: AnyAction) => {
   return state;
 };
 
-const deleteWishitem = (state: Expense[], action: AnyAction) => {
+const deleteExpense = (state: Expense[], action: AnyAction) => {
   const index = action.payload.index;
   state.splice(index, 1);
   return state;
@@ -34,10 +34,10 @@ export const expensesReducer = (state = initialValue, action: AnyAction) => {
       return [...state, ...initialValue];
 
     case UPDATE_EXPENSE:
-      return updateWishitem([...state], action);
+      return updateExpense([...state], action);
 
     case DELETE_EXPENSE:
-      return deleteWishitem([...state], action);
+      return deleteExpense([...state], action);
 
     default:
       return state;
